@@ -20,7 +20,7 @@ def ai_player(prev_opponent_play,
         last_four[1:] + "R",
         last_four[1:] + "P",
         last_four[1:] + "S",
-    ]
+    ] 
     sub_order = {k: play_order[0][k] for k in potential_plays if k in play_order[0]}
     if sub_order:
         prediction = max(sub_order, key=sub_order.get)[-1:]
@@ -33,3 +33,4 @@ x = play(ai_player, quincy, 1000)
 a = play(ai_player, abbey, 1000)
 b = play(ai_player, kris, 1000)
 c = play(ai_player, mrugesh, 1000)
+
